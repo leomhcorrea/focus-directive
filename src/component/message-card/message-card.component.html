@@ -1,0 +1,16 @@
+<div
+  class="message-card"
+  *ngIf="display"
+  [attr.id]="id"
+>
+  <section class="message-card__text">
+    <ng-content></ng-content>
+  </section>
+  <button
+    class="message-card__button"
+    (click)="onClick()"
+  >
+    X
+  </button>
+</div>
+
